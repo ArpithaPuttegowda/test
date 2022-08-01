@@ -1,0 +1,7 @@
+nodejs
+npm install -g create-react-app
+npm create-react-app sampleproject
+    
+    OR
+
+npx create-react-app myreactapp
