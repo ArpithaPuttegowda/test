@@ -1,4 +1,4 @@
-import React, {useState, Component} from "react";
+import React, {useState, Component, PureComponent} from "react";
 import {ApplyStylesDynamically} from "./Components/ApplyStylesDynamically";
 import ArithMetic from "./Components/ArithMetic";
 // function App() {
@@ -19,8 +19,20 @@ import {ChildToParent} from "./Components/ChildToParent";
 import ChildTOParentC from "./Components/ChildTOParentC";
 import Count from "./Components/Count";
 import {CountF} from "./Components/CountF";
+import ExceptionHandling from "./Components/ExceptionHandling/ExceptionHandling";
+import X from "./Components/ExceptionHandling/X";
+import Parent from "./Components/HOC/Parent";
+import LifeCycleMethods from "./Components/LifeCycleMethods";
+import ListKeys from "./Components/ListKeys";
+import {ListKeysPlayer} from "./Components/ListKeysPlayer";
+import {ListKeysSelect} from "./Components/ListKeysSelect";
+import {ListKeysTable} from "./Components/ListKeysTable";
 import {Player} from "./Components/Player";
 import PlayerC from "./Components/PlayerC";
+import Example from "./Components/PureComponent";
+import SetStateAsCB from "./Components/SetStateAsCB";
+import SetStateAsObjCb from "./Components/SetStateAsObjCb";
+import UnMountingPhase from "./Components/UnMountingPhase";
 
 // const App = () => {
 //   return (
@@ -129,15 +141,54 @@ import PlayerC from "./Components/PlayerC";
 //   }
 // }
 
+// class App extends React.Component {
+//   state = {
+//     isChild: true
+//   };
+//   handleCHild = () => {
+//     this.setState({
+//       isChild: !this.state.isChild
+//     });
+//   };
+//   render() {
+// let child;
+// if (this.state.isChild) {
+//   child = <Child />;
+// } else {
+//   child = <h1>Child is not there</h1>;
+// }
+//     return (
+//       <div>
+//         {/* {this.state.isChild ? <Child /> : <h1>Child is not there</h1>} */}
+//         {this.state.isChild && <Child />}
+//         <button onClick={this.handleCHild}>Button</button>
+//       </div>
+//     );
+//   }
+//   constructor() {
+//     super();
+//     console.log("constructor");
+//   }
+// }
+// export default App;
+
+// const Child = () => {
+//   return <h1>I'm child</h1>;
+// };
+//jsx ->javascript, html tags, xml or user defined or custom tags
+
 class App extends React.Component {
   render() {
     return (
       <div>
-        {/* <ArithMetic /> */}
-        <ApplyStylesDynamically />
+        {/* <LifeCycleMethods />
+        <UnMountingPhase /> */}
+        {/* <ExceptionHandling /> */}
+        {/* <X /> */}
+        {/* <Example /> */}
+        <Parent />
       </div>
     );
   }
 }
 export default App;
-//jsx ->javascript, html tags, xml or user defined or custom tags
