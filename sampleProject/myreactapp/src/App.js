@@ -17,22 +17,33 @@ import Box from "./Components/Box";
 import BoxC from "./Components/BoxC";
 import {ChildToParent} from "./Components/ChildToParent";
 import ChildTOParentC from "./Components/ChildTOParentC";
+import {ControlledComponent} from "./Components/ControlledComponent";
 import Count from "./Components/Count";
 import {CountF} from "./Components/CountF";
+import {ExampleCustomHook} from "./Components/customHook/ExampleCustomHook";
+import ExampleOwnRef from "./Components/ExampleOwnRef";
+import ExampleOwnRefF from "./Components/ExampleOwnRefF";
 import ExceptionHandling from "./Components/ExceptionHandling/ExceptionHandling";
 import X from "./Components/ExceptionHandling/X";
 import Parent from "./Components/HOC/Parent";
+import {LifeCycleForFunctionalComponent} from "./Components/LifeCycleForFunctionalComponent";
+import {LifeCycleFunctionalComponentWillUnMount} from "./Components/LifeCycleFunctionalComponentWillUnMount";
+import LifeCycleMethodAjax from "./Components/LifeCycleMethodAjax";
 import LifeCycleMethods from "./Components/LifeCycleMethods";
 import ListKeys from "./Components/ListKeys";
 import {ListKeysPlayer} from "./Components/ListKeysPlayer";
 import {ListKeysSelect} from "./Components/ListKeysSelect";
 import {ListKeysTable} from "./Components/ListKeysTable";
+import A from "./Components/myContextF";
+import {ExampleReactMemo} from "./Components/myReactMemo";
 import {Player} from "./Components/Player";
 import PlayerC from "./Components/PlayerC";
 import Example from "./Components/PureComponent";
 import SetStateAsCB from "./Components/SetStateAsCB";
 import SetStateAsObjCb from "./Components/SetStateAsObjCb";
+import {TakingDataFUseRef} from "./Components/TakingDataFUseRef";
 import UnMountingPhase from "./Components/UnMountingPhase";
+// import {A} from "./Components/myContextF";
 
 // const App = () => {
 //   return (
@@ -178,6 +189,18 @@ import UnMountingPhase from "./Components/UnMountingPhase";
 //jsx ->javascript, html tags, xml or user defined or custom tags
 
 class App extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      name: "KAELA"
+    };
+  }
+  getName = (data) => {
+    this.setState({
+      name: data
+    });
+  };
+
   render() {
     return (
       <div>
@@ -186,7 +209,19 @@ class App extends React.Component {
         {/* <ExceptionHandling /> */}
         {/* <X /> */}
         {/* <Example /> */}
-        <Parent />
+        {/* <Parent /> */}
+        {/* <LifeCycleMethods name="KAELA" loc="US" /> */}
+        {/* <LifeCycleMethodAjax name={this.state.name} getName={this.getName} /> */}
+        {/* <A /> */}
+        {/* <A /> */}
+        {/* <A /> */}
+        {/* <TakingDataFUseRef /> */}
+        {/* <ExampleOwnRefF /> */}
+        {/* <ExampleReactMemo /> */}
+        {/* <ExampleCustomHook /> */}
+        {/* <ControlledComponent /> */}
+        {/* <LifeCycleForFunctionalComponent /> */}
+        <LifeCycleFunctionalComponentWillUnMount />
       </div>
     );
   }
