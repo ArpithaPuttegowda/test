@@ -25,6 +25,8 @@ import ExampleOwnRef from "./Components/ExampleOwnRef";
 import ExampleOwnRefF from "./Components/ExampleOwnRefF";
 import ExceptionHandling from "./Components/ExceptionHandling/ExceptionHandling";
 import X from "./Components/ExceptionHandling/X";
+import {Footer} from "./Components/Footer";
+import {Header} from "./Components/Header";
 import Parent from "./Components/HOC/Parent";
 import {LifeCycleForFunctionalComponent} from "./Components/LifeCycleForFunctionalComponent";
 import {LifeCycleFunctionalComponentWillUnMount} from "./Components/LifeCycleFunctionalComponentWillUnMount";
@@ -34,6 +36,7 @@ import ListKeys from "./Components/ListKeys";
 import {ListKeysPlayer} from "./Components/ListKeysPlayer";
 import {ListKeysSelect} from "./Components/ListKeysSelect";
 import {ListKeysTable} from "./Components/ListKeysTable";
+import {Menu} from "./Components/Menu";
 import A from "./Components/myContextF";
 import {ExampleReactMemo} from "./Components/myReactMemo";
 import {Player} from "./Components/Player";
@@ -43,6 +46,7 @@ import SetStateAsCB from "./Components/SetStateAsCB";
 import SetStateAsObjCb from "./Components/SetStateAsObjCb";
 import {TakingDataFUseRef} from "./Components/TakingDataFUseRef";
 import UnMountingPhase from "./Components/UnMountingPhase";
+import "./App.css";
 // import {A} from "./Components/myContextF";
 
 // const App = () => {
@@ -221,7 +225,10 @@ class App extends React.Component {
         {/* <ExampleCustomHook /> */}
         {/* <ControlledComponent /> */}
         {/* <LifeCycleForFunctionalComponent /> */}
-        <LifeCycleFunctionalComponentWillUnMount />
+        {/* <LifeCycleFunctionalComponentWillUnMount /> */}
+        <Header />
+        <Menu />
+        <Footer />
       </div>
     );
   }
