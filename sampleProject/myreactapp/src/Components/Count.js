@@ -3,7 +3,6 @@ import React, {Component} from "react";
 export default class Count extends Component {
   constructor() {
     super();
-
     this.state = {
       count: 0,
       name: "KAELA"
