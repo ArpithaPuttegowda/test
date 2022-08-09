@@ -25,7 +25,8 @@ export const Menu = () => {
     {href: "/C", content: "C"},
     {href: "/reduxSampleC", content: "REDUX Sample Class"},
     {href: "/connectF", content: "CONNECT F"},
-    {href: "/createSlice", content: "CREATE SLICE"}
+    {href: "/createSlice", content: "CREATE SLICE"},
+    {href: "/useReducer", content: "UseReducer"}
   ];
 
   const routeData = [

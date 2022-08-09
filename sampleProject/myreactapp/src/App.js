@@ -1,4 +1,4 @@
-import React, {useState, Component, PureComponent} from "react";
+import React, {useState, Component, PureComponent, useReducer} from "react";
 import {ApplyStylesDynamically} from "./Components/ApplyStylesDynamically";
 import ArithMetic from "./Components/ArithMetic";
 // function App() {
@@ -47,6 +47,13 @@ import SetStateAsObjCb from "./Components/SetStateAsObjCb";
 import {TakingDataFUseRef} from "./Components/TakingDataFUseRef";
 import UnMountingPhase from "./Components/UnMountingPhase";
 import "./App.css";
+import {SampleUseReducerHook} from "./Components/GlobalStateUseReducer/SampleUseReducerHook";
+import {reducer} from "./Components/GlobalStateUseReducer/reducer";
+import {initData} from "./Components/GlobalStateUseReducer/initData";
+import {ctx} from "./Components/GlobalStateUseReducer/myctx";
+import {AxiosAjax} from "./Components/AxiosAjax";
+import {ExampleUseCallback} from "./Components/ExampleUseCallback";
+import {ExampleForUseMemo} from "./Components/ExampleForUseMemo";
 // import {A} from "./Components/myContextF";
 
 // const App = () => {
@@ -192,45 +199,61 @@ import "./App.css";
 // };
 //jsx ->javascript, html tags, xml or user defined or custom tags
 
-class App extends React.Component {
-  constructor() {
-    super();
-    this.state = {
-      name: "KAELA"
-    };
-  }
-  getName = (data) => {
-    this.setState({
-      name: data
-    });
-  };
+// class App extends React.Component {
+//   constructor() {
+//     super();
+//     this.state = {
+//       name: "KAELA"
+//     };
+//   }
+//   getName = (data) => {
+//     this.setState({
+//       name: data
+//     });
+//   };
 
-  render() {
-    return (
-      <div>
-        {/* <LifeCycleMethods />
-        <UnMountingPhase /> */}
-        {/* <ExceptionHandling /> */}
-        {/* <X /> */}
-        {/* <Example /> */}
-        {/* <Parent /> */}
-        {/* <LifeCycleMethods name="KAELA" loc="US" /> */}
-        {/* <LifeCycleMethodAjax name={this.state.name} getName={this.getName} /> */}
-        {/* <A /> */}
-        {/* <A /> */}
-        {/* <A /> */}
-        {/* <TakingDataFUseRef /> */}
-        {/* <ExampleOwnRefF /> */}
-        {/* <ExampleReactMemo /> */}
-        {/* <ExampleCustomHook /> */}
-        {/* <ControlledComponent /> */}
-        {/* <LifeCycleForFunctionalComponent /> */}
-        {/* <LifeCycleFunctionalComponentWillUnMount /> */}
-        <Header />
-        <Menu />
-        <Footer />
-      </div>
-    );
-  }
-}
+//   render() {
+//     return (
+//       <div>
+//         {/* <LifeCycleMethods />
+//         <UnMountingPhase /> */}
+//         {/* <ExceptionHandling /> */}
+//         {/* <X /> */}
+//         {/* <Example /> */}
+//         {/* <Parent /> */}
+//         {/* <LifeCycleMethods name="KAELA" loc="US" /> */}
+//         {/* <LifeCycleMethodAjax name={this.state.name} getName={this.getName} /> */}
+//         {/* <A /> */}
+//         {/* <A /> */}
+//         {/* <A /> */}
+//         {/* <TakingDataFUseRef /> */}
+//         {/* <ExampleOwnRefF /> */}
+//         {/* <ExampleReactMemo /> */}
+//         {/* <ExampleCustomHook /> */}
+//         {/* <ControlledComponent /> */}
+//         {/* <LifeCycleForFunctionalComponent /> */}
+//         {/* <LifeCycleFunctionalComponentWillUnMount /> */}
+//         {/* <Header />
+//         <Menu />
+//         <Footer /> */}
+//       </div>
+//     );
+//   }
+// }
+const App = () => {
+  const [state, dispatch] = useReducer(reducer, initData);
+  return (
+    <div>
+      <ctx.Provider value={{state, dispatch}}>
+        <SampleUseReducerHook />
+        <ChildTOParentC />
+        <AxiosAjax />
+        <h1>USECALLBACK</h1>
+        <ExampleUseCallback />
+        <h1>USEMEMO</h1>
+        <ExampleForUseMemo />
+      </ctx.Provider>
+    </div>
+  );
+};
 export default App;
