@@ -1,0 +1,35 @@
+<style>
+.btn{
+    border: 4px solid yellow;
+    padding: 20px;
+    border-radius: 50%;
+    background: rebeccapurple;
+    color: white;
+}
+img{
+    width: 100px;
+}
+#container{
+    display: none;
+}
+.btn:hover{
+    background: red;
+    padding: 40px;
+}
+</style>
+<button class="btn" onclick="showWishes()">Show Wishes</button>
+
+<h1 id="container"><img src="cake.webp"/>
+    <div>
+        Happy birthday! 
+    </div>
+</h1>
+
+
+<script>
+    function showWishes(){
+        console.log("I'm printing something in the console")
+        // document.getElementById("container").style.display="block"
+        document.querySelector("#container").style.display="block"
+    }
+</script>
