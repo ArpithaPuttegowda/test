@@ -1,8 +1,11 @@
 import axios from 'axios'
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useQuery } from 'react-query'
 
 export const FetchData = () => {
+   useEffect(()=>{
+fetch("https://jsonplacehlder.typicode.com/posts").then((res)=>console.log(res,"response of posts"))
+   },[])
 //  const {data,isLoading,isError}=useQuery("posts",async()=>{
 //     let res=await fetch("https://jsonplaceholder.typicode.com/posts")
 //     return res.json()

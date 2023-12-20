@@ -12,7 +12,9 @@ export const FetchDataClick = () => {
 const {data,isLoading,isError,refetch}=useQuery("posts",async()=>{
     return await axios.get("https://jsonplaceholder.typicode.com/posts")
  },{
-    enabled:isFetchPosts
+    enabled:isFetchPosts,
+    cacheTime:30000,
+    staleTime:15000
  })
 
 

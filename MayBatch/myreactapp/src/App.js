@@ -7,7 +7,7 @@ import MyComponent from './Components/InsertTheData'
 export const App = () => {
   return (
     <div>App
-      {/* <FetchData/> */}
+      <FetchData/>
       <FetchDataClick/>
       <MyComponent/>
     </div>
