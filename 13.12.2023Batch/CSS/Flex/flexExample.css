@@ -1,0 +1,38 @@
+#container{
+  border: 2px solid green;
+    display: flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+}
+.item{
+    text-align: center;
+    border: 1px solid red;
+    padding: 10px;
+}
+.item1{
+    background: yellow;
+}
+.item2{
+    background: rgb(0, 255, 149);
+}
+.item3{
+    background: rgb(255, 174, 0);
+}
+.item4{
+    background: rgb(85, 0, 255);
+}
+.item5{
+    background: rgb(255, 0, 242);
+}
+.item6{
+    background: rgb(193, 193, 181);
+}
+.item7{
+    background: rgb(0, 255, 225);
+}
+.item8{
+    background: rgb(157, 0, 255);
+}
+.item9{
+    background: rgb(255, 0, 128);
+}
