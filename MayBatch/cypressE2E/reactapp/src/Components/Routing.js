@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter, Route, Link,Routes } from 'react-router-dom';
 import Home from './Home';
 import "../App.css"
+import { GetPost } from './GetPost';
 
 
 const About = () => (
@@ -17,10 +18,12 @@ function Menu() {
       <div className="App">
               <Link to="/home">Home</Link>
               <Link to="/about">About</Link>
+              <Link to="/post">Posts</Link>
         <hr />
        <Routes>
         <Route path="/home"  element={<Home/>} />
         <Route path="/about" element={<About/>} />
+        <Route path="/post" element={<GetPost/>}/>
         </Routes>
       </div>
     </BrowserRouter>
