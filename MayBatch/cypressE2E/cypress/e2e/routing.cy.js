@@ -2,7 +2,7 @@ describe('Menu Navigation', () => {
     it('navigates to About page', () => {
       cy.visit('http://localhost:3000/');
       cy.contains('About').click();
-      cy.url().should('include', '/about');
+      cy.url().should('include', '/about').and("eq","http://localhost:3000/about")
       cy.contains('This is the about page.');
     });
   

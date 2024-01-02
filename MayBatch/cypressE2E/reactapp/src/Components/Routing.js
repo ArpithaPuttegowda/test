@@ -15,20 +15,11 @@ function Menu() {
   return (
     <BrowserRouter>
       <div className="App">
-        <nav>
-          <ul>
-            <li>
               <Link to="/home">Home</Link>
-            </li>
-            <li>
               <Link to="/about">About</Link>
-            </li>
-          </ul>
-        </nav>
-
         <hr />
        <Routes>
-        <Route path="/home" exact element={<Home/>} />
+        <Route path="/home"  element={<Home/>} />
         <Route path="/about" element={<About/>} />
         </Routes>
       </div>

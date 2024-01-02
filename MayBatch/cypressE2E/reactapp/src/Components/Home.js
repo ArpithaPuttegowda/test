@@ -8,6 +8,7 @@ const Home = () => {
   ]);
 
   const toggleCompletion = (itemId) => {
+    debugger
     setItems((prevItems) =>
       prevItems.map((item) =>
         item.id === itemId ? { ...item, completed: !item.completed } : item
@@ -21,7 +22,7 @@ const Home = () => {
       <p>This is a simple React component with a list of items.</p>
 
       <ul>
-        {items.map((item) => (
+        {items?.map((item) => (
           <li
             key={item.id}
             style={{ textDecoration: item.completed ? 'line-through' : 'none' }}
