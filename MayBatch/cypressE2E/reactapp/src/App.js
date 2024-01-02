@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import Menu from './Components/Routing'
 
 export const App = () => {
   const [count,setCount]=useState(0)
@@ -19,6 +20,7 @@ export const App = () => {
         <span data-testid="count-text">Count</span><br/>
         <b data-testid="count">{count}</b>
       </p>
+      <Menu/>
     </div>
   )
 }
