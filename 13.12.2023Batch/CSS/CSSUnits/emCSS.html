@@ -1,33 +1,27 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <style>
-        #s-parent{
-            font-size: 60px;
-        }
-        #parent{
-            font-size: 2em;  
-            margin: 2em;
-            padding:2em;
-        }
-        #child{
-            font-size:3em;
-        }
-    </style>
-  </head>
+<style>
+  #ele-1 {
+    font-size: 20px;
+  }
+  #ele-2 {
+    font-size: 2em; /*    2*20=40px   */
+    margin: 1em;    /*    1em=40px   */
+    padding: 2em;   /*    1em=40px i.e., 2*40px=80px   */
+  }
+  #ele-3 {
+    font-size: 2em;  /*    2*40px=80px   */
+    margin: 3em;     /*    3*80px=240px  */
+    padding: 2em;    /*    2*80px=160px  */
+  }
+</style>
+<html>
+  <head></head>
   <body>
-    <div id="s-parent">
-      px is an absolute unit and represents a single dot on a computer screen.
-      It is fixed and does not change based on the user's preferences or the
-      device characteristics. css
-      <p id="parent">
-        The grid-area property takes four values, representing the start and end
-        positions
-        <h1 id="child"
-          >for both rows and columns, separated by slashes. The order is
-          row-start / column-</span
-        >
-      </h1>
+    <div id="ele-1" style="color: red">
+      lorem Ipsum is simply dummy text of the printing and typesetting
+      <div id="ele-2" style="color: blue">
+        Why do we use it?
+        <div id="ele-3" style="color: aqua">Where can I get some?</div>
+      </div>
     </div>
   </body>
 </html>
