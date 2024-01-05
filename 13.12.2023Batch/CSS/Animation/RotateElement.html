@@ -1,0 +1,22 @@
+<style>
+    @keyframes rotate {
+  from{
+    transform: rotate(0deg) scale(3) translate(300px);
+    background-color: aqua;
+    opacity: 0.1;
+  }
+  to{
+    transform: rotate(360deg) scale(2);
+    background-color: yellow;
+  }
+}
+
+.rotate {
+   border: 1px solid red;
+   width: 100px;
+   height: 100px;
+  animation: rotate 2s linear infinite;
+}
+
+</style>
+<div class="rotate"></div>
