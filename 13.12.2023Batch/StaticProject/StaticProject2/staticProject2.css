@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+.banner {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(download.avif);
+  background-size: cover;
+  background-position: center;
+}
+#nav img {
+  margin: 10px;
+}
+
+#nav {
+  display: flex;
+  justify-content: space-between;
+}
+#nav ul {
+  display: flex;
+  list-style-type: none;
+  margin: 20px;
+  gap: 10px;
+  padding: 10px;
+  font-size: 20px;
+}
+
+#nav a {
+  color: white;
+  text-decoration: none;
+}
+#nav a:hover {
+  color: aqua;
+}
+#content {
+  position: relative;
+  top: 30%;
+  left: 40%;
+}
+#btns {
+  width: 18%;
+  display: flex;
+  gap: 20px;
+}
+#btns button {
+  background-color: blue;
+  border: 2px solid green;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 20px;
+  border-radius: 40%;
+  transition: background-color 1s;
+  flex: 0 0 180px;
+}
+
+#btns button:hover {
+  background-color: lightblue;
+  color: black;
+}
+#content #heading {
+ margin-bottom: 20px;
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+}
+#links li::after{
+    content: "";
+    width: 0;
+    height: 5px;
+    position: absolute;
+    bottom:-10px;
+    left: 0;
+    background: yellow;
+    transition: width 0.5s;
+}
+
+#links li{
+    position: relative;
+}
+#links li:hover:after{
+    width: 100%;
+}
