@@ -1,0 +1,24 @@
+<script src="react.development.js"></script>
+<script src="react-dom.development.js"></script>
+<script src="babel.js"></script>
+
+<div id="root"></div>
+
+<script type="text/babel">
+  function Fn() {
+    return <div>Hellow world</div>;
+  }
+  function App() {
+    return (
+      <div>
+        Welcome Sachin!!!
+        <span>Mumbai</span>
+        <Fn></Fn>
+      </div>
+    );
+  }
+  
+  ReactDOM.render(<App />, document.getElementById("root"));
+</script>
+
+<!-- jsx can be  compiled by babel -->
