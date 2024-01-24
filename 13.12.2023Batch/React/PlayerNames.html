@@ -1,0 +1,26 @@
+<script src="react.development.js"></script>
+<script src="react-dom.development.js"></script>
+<script src="babel.js"></script>
+
+<div id="root"></div>
+
+<script type="text/babel">
+  const PlayerName = (data) => {
+    console.log(data)
+    return <p>I'm {data.name},I'm from {data.loc}</p>;
+  };
+
+  const App = () => {
+    return (
+      <div>
+        <PlayerName name="Sachin" loc="Mumbai"/> 
+        <PlayerName name="Dhoni" loc="Ranchi"/>
+        <PlayerName name="Kohli" loc="Delhi"/>
+      </div>
+    );
+  };
+
+  ReactDOM.render(<App />, document.getElementById("root"));
+</script>
+
+<!-- jsx can be  compiled by babel -->

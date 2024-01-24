@@ -1,0 +1,27 @@
+<script src="react.development.js"></script>
+<script src="react-dom.development.js"></script>
+<script src="babel.js"></script>
+
+<div id="root"></div>
+
+<script type="text/babel">
+  function Player(data) {
+    console.log(data,"my player name")
+    return (
+      <div>
+        <p> I'm {data.playerName},I'm from {data.loc}</p>
+      </div>
+    );
+  }
+
+  function App() {
+    return (
+      <div>
+        <Player playerName="Sachin" loc="Mumbai" runs={10}/> 
+        <Player playerName="Dhoni" loc="Ranchi"/>
+        <Player playerName="Kohli" loc="Delhi"/>
+      </div>
+    );
+  }
+  ReactDOM.render(<App />, document.getElementById("root"));
+</script>

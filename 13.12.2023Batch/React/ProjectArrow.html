@@ -5,17 +5,18 @@
 <div id="root"></div>
 
 <script type="text/babel">
-  function Header() {
-    return <div>Header</div>;
-  }
-  function Menu() {
-    return <div>Menu</div>;
-  }
-  function Footer() {
-    return <div>Footer</div>;
+  const Header=()=> {
+    return <div>Header of the app</div>;
   }
 
-  function App() {
+  const Menu=()=> {
+    return <div>Menu</div>;
+  }
+
+  const  Footer=()=> {
+    return <div>Footer</div>;
+  }
+  const  App=()=> {
     return (
       <div>
         <Header />
@@ -24,6 +25,7 @@
       </div>
     );
   }
-
   ReactDOM.render(<App/>, document.getElementById("root"));
 </script>
+
+<!-- jsx can be  compiled by babel -->
