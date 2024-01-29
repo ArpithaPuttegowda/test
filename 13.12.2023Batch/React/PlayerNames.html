@@ -5,22 +5,21 @@
 <div id="root"></div>
 
 <script type="text/babel">
-  const PlayerName = (data) => {
-    console.log(data)
-    return <p>I'm {data.name},I'm from {data.loc}</p>;
-  };
+  function PlayerName(data) {
+    console.log(data,"data coming from Parent App")
+    return <p>I'm {data.n} ,I'm from {data.l} </p>;
+  }
 
-  const App = () => {
+  function App() {
     return (
       <div>
-        <PlayerName name="Sachin" loc="Mumbai"/> 
-        <PlayerName name="Dhoni" loc="Ranchi"/>
-        <PlayerName name="Kohli" loc="Delhi"/>
+        <PlayerName n="Sachin" l="Mumbai"/> 
+        <PlayerName n="Dhoni" l="Ranchi"/>
+        <PlayerName n="Kohli" l="Delhi"/>
       </div>
     );
-  };
-
-  ReactDOM.render(<App />, document.getElementById("root"));
+  }
+  ReactDOM.render(<App/>, document.getElementById("root"));
 </script>
 
 <!-- jsx can be  compiled by babel -->

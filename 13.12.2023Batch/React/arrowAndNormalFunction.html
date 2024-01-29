@@ -1,0 +1,18 @@
+<script>
+function greet(){
+    console.log(this,"current object")
+}
+
+const obj={
+    n:"Sachin"
+}
+
+obj.gN=greet
+console.log(obj.gN())
+
+const greetArrow=()=>console.log(this,"current object arrow")
+
+obj.gA=greetArrow;
+console.log(obj.gA())
+
+</script>

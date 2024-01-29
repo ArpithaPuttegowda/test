@@ -1,0 +1,13 @@
+<script>
+    const obj={
+        n:"Sachin",
+        fn:function(){
+            console.log(this,"current object inside the normal fn")
+            return this.n
+        },
+        fa:()=>{
+            console.log(this,"current object inside the arrow function")
+            return this.n
+        }
+    }
+</script>

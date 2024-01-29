@@ -1,0 +1,39 @@
+<script>
+    function fn(){
+        this.a=20;
+        this.b=10;
+        this.add=function(){
+            return this.a+this.b
+        }
+    }
+    var obj=new fn()
+    obj.add()//30
+
+    function f1(){
+        this.a=20;
+        this.b=10;
+        this.add=function(){
+            return this.a+this.b+this.c
+        }
+    }
+ 
+ f1.prototype.c=200;
+ var obj1=new f1()
+ obj1.add()//230
+
+function App(){
+    this.n="John"
+}
+App.prototype.getName=function(){
+    return this.n
+}
+
+var obj2=new App()
+obj2.getName()//John
+
+
+App.prototype.getNameArrow=()=>{
+    return this.n
+}
+obj2.getNameArrow()//undefined
+</script>
