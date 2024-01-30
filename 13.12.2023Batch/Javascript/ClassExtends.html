@@ -1,0 +1,40 @@
+<script>
+    // using prototype
+    class App{
+    constructor(){
+         this.a=10;
+        this.b=20
+    }
+    add(){ 
+        return this.a+this.b+this.c
+    }
+}
+App.prototype.c=100
+let o=new App()
+o.add()
+
+//using extends
+
+
+class B{
+    constructor(){
+        this.c=100;
+        this.d=200
+    }
+}
+
+class A extends B{
+    constructor(){
+        super()
+         this.a=10;
+        this.b=20
+    }
+    add(){ 
+        return this.a+this.b+this.c+this.d
+    }
+}
+
+let instance=new A()
+instance.add()//330
+
+</script>

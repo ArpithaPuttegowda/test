@@ -1,0 +1,30 @@
+<script>
+  function fn() {
+    this.a = 10;
+    setTimeout(function () {
+      console.log("current object this for normal function", this);
+      return this.a;
+    });
+    this.add = function () {
+      return this.a;
+    };
+  }
+  var o1 = new fn();
+  // output is window = current object
+  // current object this for normal function is window
+
+  function f1() {
+    this.a = 10;
+    setTimeout(() => {
+      console.log("current object this for arrow function", this);
+      return this.a;
+    });
+    this.add = function () {
+      return this.a;
+    };
+  }
+
+  let o2 = new f1();
+  // output is fn object that is f1 {a: 10, add: ƒ} = current object
+  // current object this for arrow function is f1 {a: 10, add: ƒ}
+</script>

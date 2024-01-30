@@ -1,0 +1,33 @@
+<script>
+ 
+ 
+
+  class C {
+    mul() {
+      return this.a * this.b;
+    }
+  }
+
+  class B extends C{
+    sub(){
+        return this.b-this.a
+    }
+}
+
+class App extends B {
+    constructor() {
+      super()
+      this.a = 10;
+      this.b = 20;
+    }
+    add() {
+      return this.a + this.b;
+    }
+  }
+
+  let o=new App()
+  o.add()//30
+  o.sub()//10
+  o.mul()//200
+
+</script>
