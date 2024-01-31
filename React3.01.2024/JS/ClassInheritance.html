@@ -1,0 +1,26 @@
+<script>
+ 
+ 
+   class B{
+    constructor(){
+        this.c=110;
+        this.d=200
+    }
+   }
+
+   class A extends B{
+      constructor() {
+        super()
+        this.a = 10;
+        this.b = 20;
+      }
+      add() {
+        return this.a+ this.b+this.c+this.d;
+      }
+    }
+
+    let o=new A()
+    o.add()//340
+
+  </script>
+  
