@@ -1,0 +1,42 @@
+<script>
+    function performAsyncOperation(data, callback) {
+  // Simulating an asynchronous operation
+  setTimeout(function() {
+    console.log(`Processing: ${data}`);
+    callback();
+  }, 1000);
+}
+
+function main() {
+  let message = 'Callback with closure';
+
+  performAsyncOperation(message, function() {
+    console.log(`${message} completed`);
+  });
+}
+
+main();
+
+
+// 2nd
+
+function createPerson(name) {
+  let privateName = name;
+
+  return {
+    getFullName: function() {
+      return privateName;
+    },
+    setFullName: function(newName) {
+      privateName = newName;
+    }
+  };
+}
+
+let person = createPerson('John Doe');
+
+console.log(person.getFullName()); // Output: John Doe
+person.setFullName('Jane Doe');
+console.log(person.getFullName()); // Output: Jane Doe
+
+</script>

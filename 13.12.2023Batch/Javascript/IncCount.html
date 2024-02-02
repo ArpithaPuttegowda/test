@@ -1,11 +1,12 @@
 <button onclick="incrementCount()">Inc Count</button>
-
+<h1 id="count"></h1>
 <script>
     const incrementCount = (function () {
         let count = 0;
         return function () {
             count++;
             console.log(count);
+            document.getElementById("count").innerText=count
         };
     })();
 </script>
