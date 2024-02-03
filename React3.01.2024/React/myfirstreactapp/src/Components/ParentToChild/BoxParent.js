@@ -5,9 +5,9 @@ export const BoxParent = () => {
   return (
     <Fragment>
       <div>
-        <Box />
-        <Box />
-        <Box />
+        <Box data="1" text="one" />
+        <Box data="2" text="two" />
+        <Box data="3" text="three" />
       </div>
       <div>
         <Box />
