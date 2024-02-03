@@ -1,0 +1,15 @@
+<script>
+    const fetchData = (success) => {
+  return new Promise((resolve, reject) => {
+    if (success) {
+      resolve("Data successfully fetched!");
+    } else {
+      reject("Error fetching data!");
+    }
+  });
+};
+
+fetchData(true).then((s)=>console.log(s,"success")).catch((f)=>console.log(f,"failure"))//Data successfully fetched!,success
+
+fetchData(false).then((s)=>console.log(s,"success")).catch((f)=>console.log(f,"failure"))//Error fetching data!,failure
+</script>

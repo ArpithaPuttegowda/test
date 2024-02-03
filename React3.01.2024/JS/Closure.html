@@ -1,0 +1,12 @@
+
+<button onclick="incCount()">Click me</button>
+<h1 id="count"></h1>
+<script>
+ const incCount=(function(){
+    let count=0
+    return ()=>{
+     count++;
+     document.getElementById("count").innerText=count;
+    }
+ })()
+</script>
