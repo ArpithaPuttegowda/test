@@ -3,6 +3,9 @@ import "./App.css"
 import {BoxParent} from "./Components/ParentToChild/BoxParent"
 import { ParentComponent } from "./Components/ChildToParent/ParentComponent";
 import { Counter } from "./Components/StateUseState/Counter";
+import { ChangeName } from "./Components/StateUseState/ChangeName";
+import { Parent } from "./Components/ContextAPI/PropDrilling";
+import { ParentContextAPI } from "./Components/ContextAPI/ContextApi";
 
 const App=()=>{
     // const data="Hyderabad"
@@ -11,7 +14,10 @@ const App=()=>{
         {/* <ChildComp name="Mumbai"/> */}
         {/* <BoxParent/> */}
         {/* <ParentComponent/> */}
-        <Counter/>
+        {/* <Counter/> */}
+        {/* <ChangeName/> */}
+        {/* <Parent/> */}
+        <ParentContextAPI/>
     </div>
 }
 

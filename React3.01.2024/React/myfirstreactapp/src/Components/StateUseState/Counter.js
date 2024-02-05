@@ -1,13 +1,13 @@
 import { useState } from "react";
 
 export const Counter = () => {
-   const [c,setCount]=useState(0)//hook
+ const [count,setCount]=useState(0)
     const handleIncCount=()=>{
-       setCount(c+1)
+       setCount(1000)
     }
   return (
     <div>
-        <button onClick={handleIncCount}>Inc Count ..{c}</button>
+        <button onClick={handleIncCount}>Inc Count ..{count}</button>
     </div>
   )
 }
