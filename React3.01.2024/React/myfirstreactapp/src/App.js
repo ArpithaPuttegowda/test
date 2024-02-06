@@ -6,6 +6,9 @@ import { Counter } from "./Components/StateUseState/Counter";
 import { ChangeName } from "./Components/StateUseState/ChangeName";
 import { Parent } from "./Components/ContextAPI/PropDrilling";
 import { ParentContextAPI } from "./Components/ContextAPI/ContextApi";
+import { ParentContext2 } from "./Components/ContextAPI/ContextAPI2";
+import { HerosParent } from "./Components/ChidrenPredefined/HerosParent";
+import { PrintName } from "./Components/TakingData/PrintName";
 
 const App=()=>{
     // const data="Hyderabad"
@@ -17,7 +20,10 @@ const App=()=>{
         {/* <Counter/> */}
         {/* <ChangeName/> */}
         {/* <Parent/> */}
-        <ParentContextAPI/>
+        {/* <ParentContextAPI/> */}
+        {/* <ParentContext2/> */}
+        {/* <HerosParent/> */}
+        <PrintName/>
     </div>
 }
 
