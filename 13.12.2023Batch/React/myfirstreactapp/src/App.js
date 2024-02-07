@@ -5,6 +5,7 @@ import { Players } from "./Components/ParentToChild/Players";
 import { Counter } from "./Components/StateUseState/Counter";
 import { ChangeName } from "./Components/StateUseState/ChangeName";
 import { AddTwoNumbers } from "./Components/StateUseState/AddTwoNumbers";
+import { GetData } from "./Components/StateUseState/GetData";
 
 const App = () => {
   const loc = "Maharastra";
@@ -18,6 +19,7 @@ const App = () => {
       {/* <Counter/> */}
       {/* <ChangeName/> */}
       <AddTwoNumbers/>
+      {/* <GetData/> */}
     </div>
   );
 };
