@@ -14,7 +14,8 @@ export const PrintName = () => {
     <>
       <input ref={nameRef}/>
       <button onClick={handleClick}>Print Name</button>
-      <h1>My Name:::{name}</h1>
+      <h1 style={{color:"red",background:"blue",fontStyle:"italic"}}>My Name:::{name}</h1>
+      <h1 className="cg">{name}</h1>
     </>
   );
 };

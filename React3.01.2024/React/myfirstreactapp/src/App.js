@@ -9,6 +9,8 @@ import { ParentContextAPI } from "./Components/ContextAPI/ContextApi";
 import { ParentContext2 } from "./Components/ContextAPI/ContextAPI2";
 import { HerosParent } from "./Components/ChidrenPredefined/HerosParent";
 import { PrintName } from "./Components/TakingData/PrintName";
+import { ConditionalRendering } from "./Components/ConditionalRendering/ConditionalRendering";
+import { ConditionalRenderingTernary } from "./Components/ConditionalRendering/ConditionalRenderingTernary";
 
 const App=()=>{
     // const data="Hyderabad"
@@ -23,7 +25,9 @@ const App=()=>{
         {/* <ParentContextAPI/> */}
         {/* <ParentContext2/> */}
         {/* <HerosParent/> */}
-        <PrintName/>
+        {/* <PrintName/> */}
+        {/* <ConditionalRendering/> */}
+        <ConditionalRenderingTernary/>
     </div>
 }
 
