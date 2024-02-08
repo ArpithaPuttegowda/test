@@ -30,6 +30,7 @@ export const AddTwoNumbers = () => {
       </p>
       <button onClick={handleSum}>Sum</button>
       <h1 style={{color:result>100?"green":"red"}}>Result:{result}</h1>
+      <h1 class={result>100?"cb":"cr"}>Result:{result}</h1>
     </div>
   );
 };
