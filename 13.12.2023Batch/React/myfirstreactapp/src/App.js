@@ -9,6 +9,9 @@ import { GetData } from "./Components/StateUseState/GetData";
 import { ParentConditionalR } from "./Components/ConditionalRendering/ParentConditionalR";
 import { ParentConditionalTO } from "./Components/ConditionalRendering/ConditionalRenderingTernary";
 import { ImmutableProp } from "./Components/DifferencesBetweenStateAndProps/ImmutableProp";
+import { ReRendersComp } from "./Components/ParentToChild/Re-rendersComp";
+import { Parent } from "./Components/ChildToParent/PassingDataFromChildToParent";
+import { ParentComp } from "./Components/ChildToParent/PassingCtoP";
 
 const App = () => {
   const loc = "Maharastra";
@@ -24,7 +27,10 @@ const App = () => {
       {/* <GetData/> */}
       {/* <ParentConditionalR/> */}
       {/* <ParentConditionalTO/> */}
-      <ImmutableProp/>
+      {/* <ImmutableProp/> */}
+      {/* <ReRendersComp/> */}
+      {/* <Parent/> */}
+      <ParentComp/>
     </div>
   );
 };
