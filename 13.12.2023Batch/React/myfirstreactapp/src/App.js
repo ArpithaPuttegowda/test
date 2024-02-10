@@ -12,6 +12,9 @@ import { ImmutableProp } from "./Components/DifferencesBetweenStateAndProps/Immu
 import { ReRendersComp } from "./Components/ParentToChild/Re-rendersComp";
 import { Parent } from "./Components/ChildToParent/PassingDataFromChildToParent";
 import { ParentComp } from "./Components/ChildToParent/PassingCtoP";
+import ParentComponent from "./Components/ChildToParent/PassingDataFromCtoP2";
+import ParentPropDrilling from "./Components/ContextAPI/PropDrilling";
+import ParentContextAPI from "./Components/ContextAPI/PassDataUsingContextAPI";
 
 const App = () => {
   const loc = "Maharastra";
@@ -30,7 +33,10 @@ const App = () => {
       {/* <ImmutableProp/> */}
       {/* <ReRendersComp/> */}
       {/* <Parent/> */}
-      <ParentComp/>
+      {/* <ParentComp/> */}
+      {/* <ParentComponent/> */}
+      {/* <ParentPropDrilling/> */}
+      <ParentContextAPI/>
     </div>
   );
 };
