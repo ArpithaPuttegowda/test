@@ -1,0 +1,52 @@
+#container {
+    height: 800px;
+  border: 10px solid green;
+  display: grid;
+  /* grid-template-columns: repeat(2,100px) 200px; */
+  /* grid-template-columns: repeat(3,1fr); */
+  grid-template-columns: 10% 35% 20%;
+  /* grid-template-rows:100px 200px 300px; */
+  /* row-gap: 10px;
+  column-gap: 10px; */
+  /* gap:20px; */
+  /* justify-items: stretch;
+  align-items: stretch; */
+  place-items:stretch stretch;
+  /* justify-content:start ;
+  align-content: stretch; */
+  place-content:end start ;
+}
+.item {
+  text-align: center;
+  padding: 10px;
+  border: 2px solid red;
+  font-size: 20px;
+}
+
+.item1 {
+  background: rgb(236, 236, 20);
+}
+.item2 {
+  background: rgb(0, 255, 149);
+}
+.item3 {
+  background: rgb(255, 174, 0);
+}
+.item4 {
+  background: rgb(85, 0, 255);
+}
+.item5 {
+  background: rgb(255, 0, 242);
+}
+.item6 {
+  background: rgb(193, 193, 181);
+}
+.item7 {
+  background: rgb(0, 255, 225);
+}
+.item8 {
+  background: rgb(157, 0, 255);
+}
+.item9 {
+  background: rgb(255, 0, 128);
+}
