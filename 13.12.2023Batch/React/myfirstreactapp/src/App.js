@@ -15,6 +15,9 @@ import { ParentComp } from "./Components/ChildToParent/PassingCtoP";
 import ParentComponent from "./Components/ChildToParent/PassingDataFromCtoP2";
 import ParentPropDrilling from "./Components/ContextAPI/PropDrilling";
 import ParentContextAPI from "./Components/ContextAPI/PassDataUsingContextAPI";
+import ParentMultipleContextAPI from "./Components/ContextAPI/CreatingMultipleContext";
+import ParentContex2 from "./Components/ContextAPI/DefaultValue";
+import ThemeComp from "./Components/ContextAPI/ThemeContext";
 
 const App = () => {
   const loc = "Maharastra";
@@ -36,7 +39,10 @@ const App = () => {
       {/* <ParentComp/> */}
       {/* <ParentComponent/> */}
       {/* <ParentPropDrilling/> */}
-      <ParentContextAPI/>
+      {/* <ParentContextAPI/> */}
+      {/* <ParentMultipleContextAPI/> */}
+      {/* <ParentContex2 /> */}
+      <ThemeComp/>
     </div>
   );
 };

@@ -35,7 +35,7 @@
 .item5 {
   background: rgb(255, 0, 242);
   flex-shrink: 0;
-  order: 2;
+  order: 2; 
 }
 .item6 {
   background: rgb(193, 193, 181);
