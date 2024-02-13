@@ -18,6 +18,8 @@ import ParentContextAPI from "./Components/ContextAPI/PassDataUsingContextAPI";
 import ParentMultipleContextAPI from "./Components/ContextAPI/CreatingMultipleContext";
 import ParentContex2 from "./Components/ContextAPI/DefaultValue";
 import ThemeComp from "./Components/ContextAPI/ThemeContext";
+import { GePosts } from "./Components/LifeCycleMethod/GetPosts";
+import { GetPostMounting } from "./Components/LifeCycleMethod/GetPostMounting";
 
 const App = () => {
   const loc = "Maharastra";
@@ -42,7 +44,9 @@ const App = () => {
       {/* <ParentContextAPI/> */}
       {/* <ParentMultipleContextAPI/> */}
       {/* <ParentContex2 /> */}
-      <ThemeComp/>
+      {/* <ThemeComp/> */}
+      {/* <GePosts/> */}
+      <GetPostMounting/>
     </div>
   );
 };

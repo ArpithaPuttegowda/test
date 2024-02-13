@@ -1,0 +1,20 @@
+
+<button onclick="getComments()">getComments</button>
+
+<script>
+    function getComments(){
+        let obj=new XMLHttpRequest()
+        obj.open("GET","https://jsonplaceholder.typicode.com/comments")
+        obj.send()
+        obj.onload=()=>{
+            let resp=obj.responseText;
+            console.log(resp,"comments")
+        }
+        obj.onerror=()=>{
+            let resp=obj.responseText;
+            console.log(resp,"error")
+        }
+    }
+</script>
+
+

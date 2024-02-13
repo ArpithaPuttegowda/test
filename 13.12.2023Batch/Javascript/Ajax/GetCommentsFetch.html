@@ -1,0 +1,12 @@
+
+<button onclick="getComments()">getComments</button>
+
+<script>
+    function getComments(){
+      fetch("https://jsonplaceholder.typicode.com/comments")
+      .then((res)=>res.json()
+      ).then((data)=>{console.log(data,"data")}).catch((failure)=>{console.log(failure)})
+    }
+</script>
+
+
