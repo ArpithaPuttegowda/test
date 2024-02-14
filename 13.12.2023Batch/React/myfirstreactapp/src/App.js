@@ -20,6 +20,8 @@ import ParentContex2 from "./Components/ContextAPI/DefaultValue";
 import ThemeComp from "./Components/ContextAPI/ThemeContext";
 import { GePosts } from "./Components/LifeCycleMethod/GetPosts";
 import { GetPostMounting } from "./Components/LifeCycleMethod/GetPostMounting";
+import { GetPostUpdating } from "./Components/LifeCycleMethod/GetPostUpdating";
+import UserData from "./Components/LifeCycleMethod/UpdatingPhase2";
 
 const App = () => {
   const loc = "Maharastra";
@@ -46,7 +48,9 @@ const App = () => {
       {/* <ParentContex2 /> */}
       {/* <ThemeComp/> */}
       {/* <GePosts/> */}
-      <GetPostMounting/>
+      {/* <GetPostMounting/> */}
+      {/* <GetPostUpdating/> */}
+      <UserData userId={5}/>
     </div>
   );
 };

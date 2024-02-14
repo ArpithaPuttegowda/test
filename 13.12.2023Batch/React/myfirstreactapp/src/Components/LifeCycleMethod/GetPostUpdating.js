@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 
-export const GetPostMounting = () => {
+export const GetPostUpdating = () => {
   const [count, setCount] = useState(0);
+  const [name,setName]=useState("Sachin")
   useEffect(() => {
     fetch("https://jsonplaceholder.typicode.com/users")
       .then((res) => res.json())
@@ -11,10 +12,12 @@ export const GetPostMounting = () => {
       .catch((failure) => {
         console.log(failure, "failure");
       });
-  }, []);//componentDidMount
+  },[name]);//componentDidupdate
   return (
     <div>
       <button onClick={() => setCount(count + 1)}>Inc count...{count}</button>
+
+      <button onClick={()=>setName("Dhoni")}>Change Name...{name}</button>
     </div>
   );
 };
