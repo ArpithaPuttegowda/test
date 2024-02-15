@@ -22,8 +22,13 @@ import { GePosts } from "./Components/LifeCycleMethod/GetPosts";
 import { GetPostMounting } from "./Components/LifeCycleMethod/GetPostMounting";
 import { GetPostUpdating } from "./Components/LifeCycleMethod/GetPostUpdating";
 import UserData from "./Components/LifeCycleMethod/UpdatingPhase2";
+import { CounterUpdating } from "./Components/LifeCycleMethod/EvenOrOdd";
+import { ToggleTheChild } from "./Components/LifeCycleMethod/Unmounting/Unmounting1";
+import { useState } from "react";
+import { Unmounting2 } from "./Components/LifeCycleMethod/Unmounting/Unmounting2";
 
 const App = () => {
+  const [isLoad,setIsLoad]=useState(true)
   const loc = "Maharastra";
   const runs=200
   return (
@@ -50,7 +55,11 @@ const App = () => {
       {/* <GePosts/> */}
       {/* <GetPostMounting/> */}
       {/* <GetPostUpdating/> */}
-      <UserData userId={5}/>
+      {/* <UserData userId={5}/> */}
+      {/* <CounterUpdating/> */}
+       {/* <ToggleTheChild/> */}
+      {isLoad && <Unmounting2/>} 
+      <button onClick={()=>setIsLoad(!isLoad)}>click me</button>
     </div>
   );
 };
