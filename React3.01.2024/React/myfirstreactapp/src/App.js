@@ -11,6 +11,7 @@ import { HerosParent } from "./Components/ChidrenPredefined/HerosParent";
 import { PrintName } from "./Components/TakingData/PrintName";
 import { ConditionalRendering } from "./Components/ConditionalRendering/ConditionalRendering";
 import { ConditionalRenderingTernary } from "./Components/ConditionalRendering/ConditionalRenderingTernary";
+import { SampleApp } from "./Components/ModuleCSS/SampleApp";
 
 const App=()=>{
     // const data="Hyderabad"
@@ -27,7 +28,8 @@ const App=()=>{
         {/* <HerosParent/> */}
         {/* <PrintName/> */}
         {/* <ConditionalRendering/> */}
-        <ConditionalRenderingTernary/>
+        {/* <ConditionalRenderingTernary/> */}
+        <SampleApp/>
     </div>
 }
 
