@@ -5,6 +5,7 @@ export const Unmounting2 = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
   useEffect(() => {
     const handleResize = () => {
+      console.log("resize")
       setIsMobile(window.innerWidth < 768);
     };
     window.addEventListener("resize", handleResize);

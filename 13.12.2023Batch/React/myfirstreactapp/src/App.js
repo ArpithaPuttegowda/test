@@ -26,6 +26,8 @@ import { CounterUpdating } from "./Components/LifeCycleMethod/EvenOrOdd";
 import { ToggleTheChild } from "./Components/LifeCycleMethod/Unmounting/Unmounting1";
 import { useState } from "react";
 import { Unmounting2 } from "./Components/LifeCycleMethod/Unmounting/Unmounting2";
+import { SearchFeature } from "./Components/DebouncingAndThroggtling/SearchFeature";
+import { Throggling, Throttling } from "./Components/DebouncingAndThroggtling/Throttling";
 
 const App = () => {
   const [isLoad,setIsLoad]=useState(true)
@@ -58,8 +60,11 @@ const App = () => {
       {/* <UserData userId={5}/> */}
       {/* <CounterUpdating/> */}
        {/* <ToggleTheChild/> */}
-      {isLoad && <Unmounting2/>} 
-      <button onClick={()=>setIsLoad(!isLoad)}>click me</button>
+      {/* {isLoad && <Unmounting2/>}  */}
+      {/* <button onClick={()=>setIsLoad(!isLoad)}>click me</button> */}
+      {/* <SearchFeature/> */}
+      {/* <Unmounting2/> */}
+      <Throttling/>
     </div>
   );
 };
