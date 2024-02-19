@@ -1,10 +1,11 @@
 import { createContext, useContext } from "react"
+import "./defaultVal.css"
 
 const nameCtx=createContext("Sachin")
 
 const ParentContex2=()=>{
     return <>
-        <h1>I'm Parent
+        <h1 className="content">I'm Parent
             <Child1 />
         </h1>
     </>

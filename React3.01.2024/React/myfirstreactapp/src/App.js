@@ -12,6 +12,7 @@ import { PrintName } from "./Components/TakingData/PrintName";
 import { ConditionalRendering } from "./Components/ConditionalRendering/ConditionalRendering";
 import { ConditionalRenderingTernary } from "./Components/ConditionalRendering/ConditionalRenderingTernary";
 import { SampleApp } from "./Components/ModuleCSS/SampleApp";
+import { ButtonComp } from "./Components/StyledComponents/ButtonComp";
 
 const App=()=>{
     // const data="Hyderabad"
@@ -29,7 +30,8 @@ const App=()=>{
         {/* <PrintName/> */}
         {/* <ConditionalRendering/> */}
         {/* <ConditionalRenderingTernary/> */}
-        <SampleApp/>
+        {/* <SampleApp/> */}
+        <ButtonComp/>
     </div>
 }
 

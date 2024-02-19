@@ -1,4 +1,5 @@
 import { createContext, useContext } from "react";
+import "./creatingM.css"
 
 const ctx = createContext(); //space
 const playerListCtx = createContext();
@@ -11,7 +12,7 @@ const ParentMultipleContextAPI = () => {
   const playersList = ["Sachin", "Dhoni", "Kohli"];
 
   return (
-    <p>
+    <p className="content">
       I'm Parent
       <playerListCtx.Provider value={playersList}>
         <ctx.Provider value={sachinInfo}>

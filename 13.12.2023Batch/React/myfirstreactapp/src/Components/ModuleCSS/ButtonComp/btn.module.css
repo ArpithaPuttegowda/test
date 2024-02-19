@@ -1,0 +1,17 @@
+.btn{
+    background-color: rgb(177, 230, 173);
+    padding: 5px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: blue;
+}
+
+.m-t{
+    margin-top: 20px;
+    display: block;
+}

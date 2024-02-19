@@ -28,6 +28,9 @@ import { useState } from "react";
 import { Unmounting2 } from "./Components/LifeCycleMethod/Unmounting/Unmounting2";
 import { SearchFeature } from "./Components/DebouncingAndThroggtling/SearchFeature";
 import { Throggling, Throttling } from "./Components/DebouncingAndThroggtling/Throttling";
+import { Button } from "./Components/ModuleCSS/ButtonComp/Button";
+import { Content } from "./Components/ModuleCSS/ContentComp/Content";
+import { ButtonStyled } from "./Components/StyledComponents/ButtonStyled";
 
 const App = () => {
   const [isLoad,setIsLoad]=useState(true)
@@ -64,7 +67,10 @@ const App = () => {
       {/* <button onClick={()=>setIsLoad(!isLoad)}>click me</button> */}
       {/* <SearchFeature/> */}
       {/* <Unmounting2/> */}
-      <Throttling/>
+      {/* <Throttling/> */}
+      {/* <Button/> */}
+      {/* <Content/> */}
+      <ButtonStyled isBlue/>
     </div>
   );
 };
