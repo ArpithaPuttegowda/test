@@ -19,7 +19,7 @@ export const ButtonStyled = ({ isBlue }) => {
       </StyledReact>
       <StyledAngular>Angular</StyledAngular>
       {/* <div style={{ color: isRed ? "red" : "blue" }}>Vue js</div> */}
-      <StyledVue>Vue js</StyledVue>
+      <StyledVue isRed>Vue js</StyledVue>
       {/* <h1 style={{background:isBlue?"blue":""}}>Nodejs</h1> */}
       <StyledNode isBlue={isBlue} isWhite={false}>
         Node

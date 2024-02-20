@@ -11,7 +11,7 @@ export const StyledButton = styled.button`
 `;
 
 export const StyledReact=styled.h1`
-color:blue;
+background-color:${props => props.theme.colors.primary}
 &>span{
     color:red;
     background:blue;
