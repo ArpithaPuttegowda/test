@@ -15,7 +15,17 @@ cursor: pointer;
 `;
 
 
-const StyledContent=styled.h1`
+export const StyledContent=styled.h1`
 color:red;
 background:green
+`
+
+
+export const StyledFancyBtn=styled(StyledButton)`
+background:linear-gradient(red,green,pink)
+`
+
+export const StyledVuejs=styled.div`
+color:${(props)=>props.isRed?"red":"blue"};
+margin:${props=>props.m?props.m:"20px"}
 `

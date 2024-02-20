@@ -1,10 +1,13 @@
-import { StyledButton } from "./styled"
+import { StyledButton,StyledContent,StyledFancyBtn, StyledVuejs } from "./styled"
+
 
 export const ButtonComp = () => {
   return (
     <>
     <StyledButton>Click me</StyledButton>
-    <h1 style={{color:"red"}}>React App</h1>
+    <StyledContent>REact</StyledContent>
+    <StyledFancyBtn>Submit</StyledFancyBtn>
+    <StyledVuejs isRed={false} m="10px">Vue js</StyledVuejs>
     </>
     
   )

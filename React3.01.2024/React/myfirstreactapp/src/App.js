@@ -13,6 +13,12 @@ import { ConditionalRendering } from "./Components/ConditionalRendering/Conditio
 import { ConditionalRenderingTernary } from "./Components/ConditionalRendering/ConditionalRenderingTernary";
 import { SampleApp } from "./Components/ModuleCSS/SampleApp";
 import { ButtonComp } from "./Components/StyledComponents/ButtonComp";
+import { PlayerList } from "./Components/ListAndKeys/PlayerList";
+import { RenderColours } from "./Components/ListAndKeys/RenderColours";
+import { RenderFlowers } from "./Components/ListAndKeys/RenderFlowers";
+import MyComponent from "./Components/ListAndKeys/RenderData";
+import MyReversComp from "./Components/ListAndKeys/ReverseTheList";
+import { Products } from "./Components/ListAndKeys/Products";
 
 const App=()=>{
     // const data="Hyderabad"
@@ -31,7 +37,13 @@ const App=()=>{
         {/* <ConditionalRendering/> */}
         {/* <ConditionalRenderingTernary/> */}
         {/* <SampleApp/> */}
-        <ButtonComp/>
+        {/* <ButtonComp/> */}
+        <PlayerList/>
+        <RenderColours/>
+        <RenderFlowers/>
+        <MyComponent/>
+        <MyReversComp/>
+        <Products/>
     </div>
 }
 
