@@ -4,7 +4,7 @@ export const RenderPlayers = () => {
     <>
     {
         data?.map((player,i)=>{
-            return <h1 key>{player}</h1>
+            return <h1 >{player}</h1>
         })
     }
     </>
