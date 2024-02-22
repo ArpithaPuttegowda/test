@@ -19,6 +19,8 @@ import { RenderFlowers } from "./Components/ListAndKeys/RenderFlowers";
 import MyComponent from "./Components/ListAndKeys/RenderData";
 import MyReversComp from "./Components/ListAndKeys/ReverseTheList";
 import { Products } from "./Components/ListAndKeys/Products";
+import { RenderTableData } from "./Components/ListAndKeys/RenderTableData";
+import { ParentCompo } from "./Components/ReusableComponents/ReusableOrderedList";
 
 const App=()=>{
     // const data="Hyderabad"
@@ -38,12 +40,14 @@ const App=()=>{
         {/* <ConditionalRenderingTernary/> */}
         {/* <SampleApp/> */}
         {/* <ButtonComp/> */}
-        <PlayerList/>
+        {/* <PlayerList/>
         <RenderColours/>
         <RenderFlowers/>
         <MyComponent/>
         <MyReversComp/>
-        <Products/>
+        <Products/> */}
+        {/* <RenderTableData/> */}
+        <ParentCompo/>
     </div>
 }
 

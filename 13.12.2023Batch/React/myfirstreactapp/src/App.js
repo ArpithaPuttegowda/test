@@ -11,6 +11,9 @@ import { RenderColour, RenderFlowers } from "./Components/ListAndKeys/RenderingC
 import { RenderCountries } from "./Components/ListAndKeys/RenderCountries";
 import { RenderProducts } from "./Components/ListAndKeys/RenderProducts";
 import { RenderPosts } from "./Components/ListAndKeys/RenderPosts";
+import { RenderSpans } from "./Components/ListAndKeys/RenderSpans";
+import { RenderComments } from "./Components/ListAndKeys/RenderComments";
+import { RenderUsers } from "./Components/ListAndKeys/RenderUsers";
 
 const App = () => {
   return (
@@ -24,7 +27,10 @@ const App = () => {
       {/* <RenderFlowers/> */}
       {/* <RenderCountries/> */}
       {/* <RenderProducts/> */}
-      <RenderPosts/>
+      {/* <RenderPosts/> */}
+      {/* <RenderSpans/> */}
+      {/* <RenderComments/> */}
+      <RenderUsers/>
       </ThemeProvider>
     </div>
   );
