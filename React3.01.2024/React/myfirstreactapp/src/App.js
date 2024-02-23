@@ -21,6 +21,10 @@ import MyReversComp from "./Components/ListAndKeys/ReverseTheList";
 import { Products } from "./Components/ListAndKeys/Products";
 import { RenderTableData } from "./Components/ListAndKeys/RenderTableData";
 import { ParentCompo } from "./Components/ReusableComponents/ReusableOrderedList";
+import { ResuableDropDown } from "./Components/ReusableComponents/ResuableDropDown";
+import ButtonParent from "./Components/ReusableComponents/ButtonReusable";
+import { Registration } from "./Components/GettingDataUsingOnChange/Registration";
+import ResuableTextInput from "./Components/ReusableComponents/TextInput";
 
 const App=()=>{
     // const data="Hyderabad"
@@ -47,7 +51,11 @@ const App=()=>{
         <MyReversComp/>
         <Products/> */}
         {/* <RenderTableData/> */}
-        <ParentCompo/>
+        {/* <ParentCompo/> */}
+        {/* <ResuableDropDown/> */}
+        {/* <ButtonParent/> */}
+        {/* <Registration/> */}
+        <ResuableTextInput/>
     </div>
 }
 
