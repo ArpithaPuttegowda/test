@@ -14,6 +14,9 @@ import { RenderPosts } from "./Components/ListAndKeys/RenderPosts";
 import { RenderSpans } from "./Components/ListAndKeys/RenderSpans";
 import { RenderComments } from "./Components/ListAndKeys/RenderComments";
 import { RenderUsers } from "./Components/ListAndKeys/RenderUsers";
+import { RenderTable } from "./Components/ListAndKeys/RenderTable";
+import { ReverseData } from "./Components/ListAndKeys/ReverseData";
+import { ReusuableOrderedList } from "./Components/ReusableComponents/ReusuableOrderedList";
 
 const App = () => {
   return (
@@ -30,7 +33,10 @@ const App = () => {
       {/* <RenderPosts/> */}
       {/* <RenderSpans/> */}
       {/* <RenderComments/> */}
-      <RenderUsers/>
+      {/* <RenderUsers/> */}
+      {/* <RenderTable/> */}
+      {/* <ReverseData/> */}
+      <ReusuableOrderedList/>
       </ThemeProvider>
     </div>
   );
